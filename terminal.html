@@ -1,0 +1,81 @@
+<pre><font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ 
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ git virsion
+git: &apos;virsion&apos; is not a git command. See &apos;git --help&apos;.
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ git version
+git version 2.25.1
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ git config --global user.name &quot;hnsanthosh&quot;
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ git config --global user.email &quot;hnsnth@gmail.com&quot;
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ git config --list
+user.name=hnsanthosh
+user.email=hnsnth@gmail.com
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ pwd
+/home/santu
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ gedit .gitconfig 
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ ls
+ <font color="#3465A4"><b>Desktop</b></font>     <font color="#3465A4"><b>Downloads</b></font>   <font color="#3465A4"><b>notes</b></font>      <font color="#3465A4"><b>Public</b></font>  &apos;template RTI.odt&apos;  &apos;Untitled 1.odt&apos;   <font color="#3465A4"><b>website</b></font>
+ <font color="#3465A4"><b>Documents</b></font>   <font color="#3465A4"><b>Music</b></font>       <font color="#3465A4"><b>Pictures</b></font>   <font color="#3465A4"><b>snap</b></font>     <font color="#3465A4"><b>Templates</b></font>           <font color="#3465A4"><b>Videos</b></font>
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~</b></font>$ cd website/
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website</b></font>$ ls
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website</b></font>$ git clone https://github.com/hnsanthosh/tmtechnologies.in.git
+Cloning into &apos;tmtechnologies.in&apos;...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.26 KiB | 644.00 KiB/s, done.
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website</b></font>$ git init
+Initialized empty Git repository in /home/santu/website/.git/
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website</b></font>$ ls
+<font color="#3465A4"><b>tmtechnologies.in</b></font>
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website</b></font>$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#CC0000">tmtechnologies.in/</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website</b></font>$ cd tmtechnologies.in/
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ ls
+index.html  LICENSE  README.md
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ git status
+On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#CC0000">index.html</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ git add index.html 
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ git status
+On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Changes to be committed:
+  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
+	<font color="#4E9A06">new file:   index.html</font>
+
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ git commit -m &quot;website of tmt&quot; index.html 
+[master c51dd63] website of tmt
+ 1 file changed, 395 insertions(+)
+ create mode 100644 index.html
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ git push origin master 
+HEAD            master          origin/HEAD     origin/master   
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ git push origin master 
+Username for &apos;https://github.com&apos;: hnsanthosh
+Password for &apos;https://hnsanthosh@github.com&apos;: 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 4.92 KiB | 2.46 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hnsanthosh/tmtechnologies.in.git
+   2518249..c51dd63  master -&gt; master
+<font color="#4E9A06"><b>santu@santu-Vostro-3558</b></font>:<font color="#3465A4"><b>~/website/tmtechnologies.in</b></font>$ 
+
+</pre>
+
